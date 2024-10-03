@@ -1,0 +1,63 @@
+# Useful Commands and Notes
+
+---
+
+## Power Commands:
+- **Shutdown**: `shutdown now`
+- **Reboot**: `reboot`
+
+---
+
+## Network Management with `nmcli`:
+- Rescan Wi-Fi networks: `$ nmcli device wifi rescan`
+- List available Wi-Fi networks: `$ nmcli device wifi list`
+- Connect to a Wi-Fi network: `$ nmcli device wifi connect SSID password senha`
+- Show active connections: `$ nmcli connection show`
+- Disconnect from a specific device (e.g., wlan0): `$ nmcli device disconnect wlan0`
+
+---
+
+## Package Management (APT):
+- Upgrade installed packages: `$ sudo apt upgrade`
+- Full upgrade (used in more extreme cases): `$ sudo apt dist-upgrade`
+- Full upgrade (completely updates all packages): `$ sudo apt full-upgrade`
+
+### Package Removal:
+- Remove a package: `$ sudo apt remove package-name`
+- Purge a package (remove with configuration files): `$ sudo apt purge package-name`
+- Remove unnecessary packages: `$ sudo apt autoremove`
+- Clean up the package cache: `$ sudo apt autoclean`
+
+> You can use `&&` to concatenate commands to be executed one after the other.
+
+---
+
+## Files and Directories:
+- **Create an empty file**: `$> run002.py`
+- **Create and write a message to a file**: `$ echo "Message" > run002.py`
+- **Append a message to an existing file**: `$ echo "Additional Message" >> run002.py`
+- **Create an empty file**: `$ touch run002.py`
+- **View the contents of a file in the terminal**: `$ cat run002.py`
+- **Open a file with the default system application**: `$ xdg-open run002.py &`
+
+### Directory Navigation Commands:
+- Show current directory: `$ pwd` (Print Working Directory)
+- List directory contents: `$ ls` (add `-l` for detailed view, `-a` to include hidden files, `-lh` for human-readable sizes)
+- Change directory: `$ cd /path/to/directory`
+- Go to home directory: `$ cd ~`
+- Move up one directory: `$ cd ..`
+- Go back to the previous directory: `$ cd -`
+- Create a directory: `$ mkdir directory-name`
+- Remove a directory: `$ rmdir directory-name`
+- Remove a file: `$ rm run002.py`
+- Copy files: `$ cp source destination`
+
+---
+
+## Miscellaneous Commands:
+- Print the current directory: `$ pwd`
+- View the contents of a file: `$ cat file-name`
+- Access a folder: `$ cd folder-name`
+- **Take a screenshot (selectable)**: `shift + prtsc`
+
+---
