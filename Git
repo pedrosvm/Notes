@@ -1,0 +1,17 @@
+## Git Workflow:
+You create a new file, then signal Git to track it with `$ git add...`, make a commit with `$ git commit -m "Message"`, and push it to the remote repository with `$ git push`.
+
+### Common Git Commands:
+- Initialize a Git repository: `$ git init` (turns the current folder into a Git repository)
+- Check Git configuration: `$ git config --list`
+- View Git status: `$ git status`
+- Add a file to be tracked: `$ git add file-name`
+- Add all files: `$ git add .`
+- Commit changes with a message: `$ git commit -m "Commit message"`
+- Show details of the last commit: `$ git show`
+- View commit logs: `$ git log`
+- Push changes to a remote repository: `$ git push`
+- Pull updates from the remote repository: `$ git pull`
+- Add a remote repository: `$ git remote add origin <URL>`
+
+---
